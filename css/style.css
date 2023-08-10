@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
 h5 {
     font-size: 36px;
 }
@@ -10,9 +12,77 @@ table, th, td {
 form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 500px;
+    /* height: 500px; */
+    margin: 60px;
+    /*        Top Right Botton Left */
+    /* margin: 60px 60px 60px 60px; */
+    /*        Top    Right
+              Botton Left */
+    /* margin: 60px 60px; */
+    /*       Top Right&Left Botton*/
+    /* margin: 60px 60px 60px; */
+    /* O MESMO SE APLICA AO PADDING */
+    padding: 20px;
+    border: 2px solid violet;
+    position: relative;
 }
 
 textarea {
     resize: none;
+}
+
+#titulo {
+    font-size: 32px;
+    color: lightgreen;
+    text-align: center;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Borel', cursive;
+}
+
+.subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.texto {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+button[type="submit"] {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+p {
+    background-color: aquamarine;
+}
+
+a {
+    background-color: #aa8e33c8;
+}
+
+ol li:hover {
+    background-color: #663390ff;
+    transition: all 1s;
+    cursor: pointer;
+    transform: translateX(-20px);
+}
+
+ol li::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    margin-left: 3px;
 }
